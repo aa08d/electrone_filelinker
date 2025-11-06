@@ -1,0 +1,16 @@
+__pycache__/
+*.py[codz]
+*$py.class
+
+db.sqlite3
+
+instance/
+.webassets-cache
+
+__pypackages__/
+
+.env
+venv
+config
+
+.idea
