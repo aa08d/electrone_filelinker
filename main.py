@@ -30,7 +30,7 @@ def result():
     
     uuid = uuid7()
     media_name = ''.join([str(uuid), '.', uploaded_file.filename.split(".")[1]])
-    link = f"127.0.0.1/download?filename={media_name}"
+    link = f"fs.5ef.ru/download?filename={media_name}"
     session = get_session()
     media = create_media(session=session, expire=expire, uuid=uuid, link=link)
     uploaded_file.save(f'{UPLOAD_DIR}{media_name}')
