@@ -75,7 +75,7 @@ def main() -> None:
     init_db()
     session = get_session()
     init_scheduler(session=session)
-    app.run(debug=True)
+    return app
 
 
 if __name__ == "__main__":
