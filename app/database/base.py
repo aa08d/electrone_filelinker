@@ -14,4 +14,4 @@ def get_session() -> Session:
 		return SessionLocal()
 
 def init_db() -> None:
-  	Base.metadata.create_all(bind=engine)
+  	Base.metadata.create_all(bind=engine, checkfirst=True)
